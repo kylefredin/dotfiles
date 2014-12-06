@@ -19,6 +19,7 @@ Plugin 'tomasr/molokai'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'othree/html5.vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jiangmiao/auto-pairs'
 
@@ -45,6 +46,7 @@ filetype plugin indent on    " required
 syntax enable
 colorscheme molokai
 let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
 set smartindent
 set tabstop=4
 set shiftwidth=4
