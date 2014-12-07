@@ -1,15 +1,15 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+
+
+" ====================================================
+" VUNDLE PACKAGES
+" ====================================================
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-
 Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
@@ -22,31 +22,24 @@ Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jiangmiao/auto-pairs'
-
-
-
-
-
-
-" All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-"
+
+
+
+" ====================================================
+" CONFIGURATION SETTINGS
+" ====================================================
 syntax enable
 colorscheme molokai
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_json_checkers = ['jsonlint']
+let g:syntastic_handlebars_checkers = ['handlebars']
+let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_html_checkers = ['w3', 'validator']
+let g:syntastic_aggregate_errors = 1
+let g:airline_powerline_fonts = 1
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -55,12 +48,22 @@ let g:rehash256 = 1
 set number
 set cursorline
 set spell spelllang=en_us
-set laststatus=2 "tells airline to always display, instead of only when there is a split
+set laststatus=2
 set nohls
 
+" convert tabs to spaces
+set expandtab
+
+" highlight tailing whitespace
+set list listchars=tab:\ \ ,trail:·
+
+" utf encoding
+set encoding=utf-8
 
 
-" removes the arrow keys for normal and insert modes... hardcore man!
+" ====================================================
+" KEY MAPPINGS
+" ====================================================
 no <up> ddkP
 no <down> ddp
 no <left> <Nop>
@@ -76,3 +79,5 @@ nmap n nzz
 nmap N Nzz
 nmap } }zz
 nmap { {zz
+nmap j jzz
+nmap k kzz
