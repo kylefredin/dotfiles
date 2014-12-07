@@ -23,7 +23,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'trusktr/seti.vim'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -119,7 +119,7 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
-" auto center find commands 
+" auto center find commands
 nmap G Gzz
 nmap n nzz
 nmap N Nzz
