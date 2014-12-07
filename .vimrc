@@ -22,6 +22,8 @@ Plugin 'othree/html5.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'trusktr/seti.vim'
+Plugin 'Valloric/YouCompleteMe'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -34,7 +36,7 @@ filetype plugin indent on    " required
 syntax enable
 
 " set the color scheme
-colorscheme molokai
+colorscheme seti
 
 " enabled javascript checkers
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
@@ -64,7 +66,7 @@ let g:airline_powerline_fonts = 1
 let g:rehash256 = 1
 
 " enable smart indenting
-set smartindent
+" set smartindent
 
 " set number of spaces per tab
 set tabstop=4
@@ -98,6 +100,11 @@ set list listchars=tab:\ \ ,trail:·
 
 " utf encoding
 set encoding=utf-8
+
+" set spell check highlighting
+hi clear SpellBad
+hi SpellBad cterm=underline
+
 
 
 " ====================================================
