@@ -30,25 +30,64 @@ filetype plugin indent on    " required
 " ====================================================
 " CONFIGURATION SETTINGS
 " ====================================================
+" enable syntax highlighting
 syntax enable
+
+" set the color scheme
 colorscheme molokai
+
+" enabled javascript checkers
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+
+" enabled php checkers
 let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+
+" enabled json checkers
 let g:syntastic_json_checkers = ['jsonlint']
+
+" enabled handlebars checkers
 let g:syntastic_handlebars_checkers = ['handlebars']
+
+" enabled css checkers
 let g:syntastic_css_checkers = ['csslint']
+
+"enabled html checkers
 let g:syntastic_html_checkers = ['w3', 'validator']
+
+" allow syntastic to aggregate all errors from checkers
 let g:syntastic_aggregate_errors = 1
+
+" set airline to use powerline fonts
 let g:airline_powerline_fonts = 1
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+
+" not sure what this does...
 let g:rehash256 = 1
+
+" enable smart indenting
+set smartindent
+
+" set number of spaces per tab
+set tabstop=4
+
+" number of spaces to use for tab characters
+set shiftwidth=4
+
+" turn tabs to spaces
+set expandtab
+
+" enable line numbers
 set number
+
+" enable cursor line highlighting
 set cursorline
+
+" enable spell checking
 set spell spelllang=en_us
+
+" enable status bar for all files (not just split)
 set laststatus=2
+
+" disable highlighting of search results
 set nohls
 
 " convert tabs to spaces
