@@ -101,6 +101,9 @@ set list listchars=tab:\ \ ,trail:·
 " utf encoding
 set encoding=utf-8
 
+" disable splitting panes when buffer is dirty
+set hidden
+
 " set spell check highlighting
 hi clear SpellBad
 hi SpellBad cterm=underline
