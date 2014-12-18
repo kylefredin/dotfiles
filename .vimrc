@@ -23,7 +23,8 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'trusktr/seti.vim'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -108,6 +109,8 @@ set hidden
 hi clear SpellBad
 hi SpellBad cterm=underline
 
+" treat all numerals as decimal, even if they are padded with 0's
+" set nrformats
 
 
 " ====================================================
