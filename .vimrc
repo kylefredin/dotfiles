@@ -63,6 +63,8 @@ let g:syntastic_aggregate_errors = 1
 " set airline to use powerline fonts
 let g:airline_powerline_fonts = 1
 
+let g:airline#extensions#tabline#enabled = 1
+
 " not sure what this does...
 let g:rehash256 = 1
 
@@ -112,6 +114,23 @@ hi SpellBad cterm=underline
 " treat all numerals as decimal, even if they are padded with 0's
 " set nrformats
 
+" disable creation of backup files
+set nobackup
+set nowritebackup
+set noswapfile
+
+" ignore case when searching
+set ignorecase
+set smartcase
+
+" warn if we are going to destroy a buffer
+set autoread
+
+" disable start screen
+set shortmess+=I
+
+" jump to search match... useful
+set incsearch
 
 " ====================================================
 " KEY MAPPINGS
