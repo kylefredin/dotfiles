@@ -15,6 +15,7 @@
 .meteorsession
 .node-gyp
 .npm
+.pdepend
 .rnd
 .ssh
 .viminfo

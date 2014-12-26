@@ -43,7 +43,7 @@ colorscheme seti
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 
 " enabled php checkers
-let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd']
+let g:syntastic_php_checkers = ['php', 'phpcs', 'phpmd', 'phplint']
 
 " enabled json checkers
 let g:syntastic_json_checkers = ['jsonlint']
@@ -53,6 +53,7 @@ let g:syntastic_handlebars_checkers = ['handlebars']
 
 " enabled css checkers
 let g:syntastic_css_checkers = ['csslint']
+let g:syntastic_less_checkers = ['lessc', 'less-lint']
 
 "enabled html checkers
 let g:syntastic_html_checkers = ['w3', 'validator']
