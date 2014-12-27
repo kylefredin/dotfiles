@@ -72,6 +72,8 @@ let g:rehash256 = 1
 " enable smart indenting
 " set smartindent
 
+let mapleader = ","
+
 " set number of spaces per tab
 set tabstop=4
 
@@ -153,3 +155,11 @@ nmap } }zz
 nmap { {zz
 nmap j jzz
 nmap k kzz
+
+nmap <leader>m :NERDTreeToggle<CR>
+
+" map capital versions of w and q
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
