@@ -25,6 +25,7 @@ Plugin 'jiangmiao/auto-pairs'
 Plugin 'trusktr/seti.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'marijnh/tern_for_vim'
+Plugin 'majutsushi/tagbar'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -162,6 +163,7 @@ nmap k kzz
 nmap <leader>m :NERDTreeToggle<CR>
 nmap <leader>b :Gblame<CR>
 nmap <leader>l :bn<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " map capital versions of w and q
 :command WQ wq
