@@ -55,7 +55,7 @@ let g:syntastic_handlebars_checkers = ['handlebars']
 let g:syntastic_css_checkers = ['csslint']
 let g:syntastic_less_checkers = ['lessc', 'less-lint']
 
-"enabled html checkers
+" enabled html checkers
 let g:syntastic_html_checkers = ['w3', 'validator']
 
 " allow syntastic to aggregate all errors from checkers
@@ -135,6 +135,9 @@ set shortmess+=I
 " jump to search match... useful
 set incsearch
 
+" enable backspace in insert mode
+set backspace=indent,eol,start
+
 " ====================================================
 " KEY MAPPINGS
 " ====================================================
@@ -157,6 +160,8 @@ nmap j jzz
 nmap k kzz
 
 nmap <leader>m :NERDTreeToggle<CR>
+nmap <leader>b :Gblame<CR>
+nmap <leader>l :bn<CR>
 
 " map capital versions of w and q
 :command WQ wq
